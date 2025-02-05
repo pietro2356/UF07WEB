@@ -6,4 +6,10 @@ let anagrafica = {
     matricola: matricola
 }
 
-console.table(anagrafica);
+/**
+ * @description Stampa l'anagrafica precedentemente creata
+ * @returns void
+ */
+function stampaAnagrafica() {
+    console.table(anagrafica);
+}
