@@ -15,12 +15,30 @@ h2{
     display: flex;
 }
 
-table, td, th{
+table {
+    width: 100%;
     border: #333333 solid 1px;
+    border-radius: 10px;
     border-collapse: collapse;
-    padding: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-th{
-    background-color: lightgray;
+td, th {
+    border: none;
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {    /*conta le tr e alterna le righe con colore di background diverso per migliorare la leggibilita*/
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
 }
