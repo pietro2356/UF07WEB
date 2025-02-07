@@ -49,6 +49,8 @@ function stringaInNumero(stringa){
     }
 }
 
+var punti = 0;
+
 //operazioni con punteggio
 function operazioniPunteggio(punteggio){
     punteggio += 13;
@@ -61,7 +63,7 @@ function operazioniPunteggio(punteggio){
     console.log("Punteggio: " + punteggio);
     punteggio **= 3;
     console.log("Punteggio: " + punteggio);
-    var punti = punteggio;
+    punti = punteggio;
 }
 
 //valutazione punteggio
