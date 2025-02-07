@@ -207,19 +207,19 @@ function dicituraRange(){
     let range = "";
     switch (dicitura) {
         case DICITURE[0]:
-            range = DICITURE[0] +": 0-16";
+            range = DICITURE[0] +": 0-16 - Range: " + ((16-0)+1);
             break;
         case DICITURE[1]:
-            range = DICITURE[1] +": 17-19";
+            range = DICITURE[1] +": 17-19 - Range: " + ((19-17)+1);
             break;
         case DICITURE[2]:
-            range = DICITURE[2] +": 20-24";
+            range = DICITURE[2] +": 20-24 - Range: " + ((24-20)+1);
             break;
         case DICITURE[3]:
-            range =DICITURE[3] +": 25-28";
+            range =DICITURE[3] +": 25-28 - Range: " + ((28-25)+1);
             break;
         case DICITURE[4]:
-            range =DICITURE[4] +": 29-32";
+            range =DICITURE[4] +": 29-32 - Range: " + ((32-29)+1);
             break;
         default:
             range = "Dicitura non valida BABBOOOOO";
