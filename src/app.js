@@ -80,9 +80,11 @@ function stampaAFP1(){
     let afp = "AFP: ";
     for (let i = 0; i < 33; i++) {
         if (i === 32) {
-            afp += i + ".";
+            afp += "30L.";
+        }else if(i===31){
+            afp += "30L, ";
         }else{
-        afp += i + ", ";
+            afp += i + ", ";
         }
     }
     console.log(afp);
@@ -94,9 +96,11 @@ function stampaAFP2(){
     let i = 0;
     while (i < 33) {
         if (i === 32) {
-            afp += i + ".";
+            afp += "30L.";
+        }else if(i===31){
+            afp += "30L, ";
         }else{
-        afp += i + ", ";
+            afp += i + ", ";
         }
         i++;
     }
@@ -110,9 +114,11 @@ function stampaAFPSuff1(){
     let afp = "AFP sufficienti: ";
     for (let i = SUFFICIENZA; i < 33; i++) {
         if (i === 32) {
-            afp += i + ".";
+            afp += "30L.";
+        }else if(i===31){
+            afp += "30L, ";
         }else{
-        afp += i + ", ";
+            afp += i + ", ";
         }
     }
     console.log(afp);
@@ -125,9 +131,11 @@ function stampaAFPSuff2(){
     while (i < 33) {
         if (i >= SUFFICIENZA) {
             if (i === 32) {
-                afp += i + ".";
+                afp += "30L.";
+            }else if(i===31){
+                afp += "30L, ";
             }else{
-            afp += i + ", ";
+                afp += i + ", ";
             }
         }
         i++;
