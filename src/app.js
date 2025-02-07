@@ -27,3 +27,24 @@ function inverti2(nome, cognome) {
     console.log("Variabile nome inverita: " + nome);
     console.log("Variabile cognome invertita: " + cognome);
 }
+
+//da numero a stringa
+function numeroInStringa(numero){
+    numero = numero.toString();
+    if (typeof numero === 'string') {
+        console.log("Il numero è stato convertito in stringa: " + numero + " è una " + typeof numero);
+    }else{
+        console.log("Errore");
+    }
+}
+
+
+//da stringa a numero
+function stringaInNumero(stringa){
+    stringa = parseInt(stringa);
+    if (typeof stringa === 'number') {
+        console.log("La stringa è stata convertita in numero: " + stringa + " è un " + typeof stringa);
+    }else{
+        console.log("Errore");
+    }
+}
