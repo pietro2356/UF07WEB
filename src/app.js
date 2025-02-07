@@ -74,3 +74,31 @@ function valutaPunteggio(){
         console.log("Buon Punteggio");
     }
 }
+
+//stampa AFP
+function stampaAFP1(){
+    let afp = "AFP: ";
+    for (let i = 0; i < 33; i++) {
+        if (i === 32) {
+            afp += i + ".";
+        }else{
+        afp += i + ", ";
+        }
+    }
+    console.log(afp);
+}
+
+//stampa AFP ma con il while
+function stampaAFP1(){
+    let afp = "AFP: ";
+    let i = 0;
+    while (i < 33) {
+        if (i === 32) {
+            afp += i + ".";
+        }else{
+        afp += i + ", ";
+        }
+        i++;
+    }
+    console.log(afp);
+}
