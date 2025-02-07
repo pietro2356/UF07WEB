@@ -142,3 +142,28 @@ function stampaAFPSuff2(){
     }
     console.log(afp);
 }
+
+//stampa relazione voti e diciture
+function votoDicitura(){
+    let voti = [0, 1, 2, 3, 4, 5, 6 ,7 ,8 ,9 ,10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ,22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32];
+    let diciture = ["Insufficiente", "Discreto", "Buono", "Distinto", "Ottimo",];
+    for (let i = 0; i < voti.length; i++) {
+        switch (true) {
+            case voti[i] < 17:
+                console.log(voti[i] + ": " + diciture[0]);
+                break;
+            case voti[i] < 20:
+                console.log(voti[i] + ": " + diciture[1]);
+                break; 
+            case voti[i] < 25:
+                console.log(voti[i] + ": " + diciture[2]);
+                break;
+            case voti[i] < 29:
+                console.log(voti[i] + ": " + diciture[3]);
+                break;
+            case voti[i] < 33:
+                console.log(voti[i] + ": " + diciture[4]);
+                break;
+        }
+    }
+}
