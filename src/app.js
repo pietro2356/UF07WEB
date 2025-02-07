@@ -48,3 +48,18 @@ function stringaInNumero(stringa){
         console.log("Errore");
     }
 }
+
+//operazioni con punteggio
+function operazioniPunteggio(punteggio){
+    punteggio += 13;
+    console.log("Punteggio: " + punteggio);
+    punteggio -= 4;
+    console.log("Punteggio: " + punteggio);
+    punteggio *= 4;
+    console.log("Punteggio: " + punteggio);
+    punteggio /= 2;
+    console.log("Punteggio: " + punteggio);
+    punteggio **= 3;
+    console.log("Punteggio: " + punteggio);
+    punti = punteggio;
+}
