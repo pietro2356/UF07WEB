@@ -189,7 +189,13 @@
     </div>
     <div class="esercizio">
         <h1>Lo sapevi che ai voti numerici corrispondono delle parole descrittive di valutazione della prestazione?</h1>
-        <button onclick="votoDicitura()">Le diciture letterarie dei voti</button>
+        <button onclick="votiDiciture()">Guarda</button>
+    </div>
+    <div class="esercizio">
+        <h1>Lo sapevi che ai voti numerici corrispondono delle parole descrittive di valutazione della prestazione?</h1>
+        <input id="voto" type="number" placeholder="Inserisci il voto">
+        <button onclick="votoDicitura(document.getElementById('voto').value)">Vediamo un po' che hai fatto</button>
+        <p id="dicitura"></p>
     </div>
 </body>
 </html>
