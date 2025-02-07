@@ -99,8 +99,28 @@ td {
     border-radius: 0.34rem;
 }
 
-.gray { background: #d3d3d3; color: #000; }
-.green { background: #7cfc00; color: #000; }
-.blue { background: #4682b4; }
-.orange { background: #ffa500; }
-.red { background: #ff4500; }
+.gray { 
+    background: #d3d3d3; color: #000; 
+}
+.green { 
+    background: #7cfc00; color: #000; 
+}
+.blue { 
+    background: #4682b4; 
+}
+.orange {
+    background: #ffa500;
+}
+.red { 
+    background: #ff4500; 
+}
+
+
+button{
+    border: 1px solid #000;
+    padding: 5px 10px;
+    margin: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 5px #000;
+}
