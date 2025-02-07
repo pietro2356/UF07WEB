@@ -61,5 +61,14 @@ function operazioniPunteggio(punteggio){
     console.log("Punteggio: " + punteggio);
     punteggio **= 3;
     console.log("Punteggio: " + punteggio);
-    punti = punteggio;
+    var punti = punteggio;
+}
+
+//valutazione punteggio
+function valutaPunteggio(){
+    if (punti > 314) {
+        console.log("Ottimo Punteggio");
+    }else{
+        console.log("Buon Punteggio");
+    }
 }
