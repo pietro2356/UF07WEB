@@ -89,7 +89,7 @@ function stampaAFP1(){
 }
 
 //stampa AFP ma con il while
-function stampaAFP1(){
+function stampaAFP2(){
     let afp = "AFP: ";
     let i = 0;
     while (i < 33) {
@@ -97,6 +97,38 @@ function stampaAFP1(){
             afp += i + ".";
         }else{
         afp += i + ", ";
+        }
+        i++;
+    }
+    console.log(afp);
+}
+
+const SUFFICIENZA = 18;
+
+//stampa AFP sufficienti
+function stampaAFPSuff1(){
+    let afp = "AFP sufficienti: ";
+    for (let i = SUFFICIENZA; i < 33; i++) {
+        if (i === 32) {
+            afp += i + ".";
+        }else{
+        afp += i + ", ";
+        }
+    }
+    console.log(afp);
+}
+
+//stampa AFP sufficientima con il while
+function stampaAFPSuff2(){
+    let afp = "AFP sufficienti: ";
+    let i = 0;
+    while (i < 33) {
+        if (i >= SUFFICIENZA) {
+            if (i === 32) {
+                afp += i + ".";
+            }else{
+            afp += i + ", ";
+            }
         }
         i++;
     }
