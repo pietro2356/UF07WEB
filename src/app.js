@@ -171,9 +171,10 @@ function votiDiciture(){
 }
 
 
-function votoDicitura(voto){
+//funzione che restituisce la dicitura del voto inserito come parametro
+function votoDicitura(){
     let messaggio = "";
-    voto = parseInt(voto);
+    voto = document.forms["votoParola"]["voto"].value;
     if (voto >= 0 && voto <= 32) {
         switch (true) {
             case voto < 17:
@@ -198,4 +199,32 @@ function votoDicitura(voto){
     }
 
     document.getElementById("dicitura").innerHTML = messaggio;
+}
+
+//data il voto in parola restituisce il range di voti
+function dicituraRange(){
+    dicitura = document.forms["rangeVoti"]["parola"].value;
+    let range = "";
+    switch (dicitura) {
+        case DICITURE[0]:
+            range = DICITURE[0] +": 0-16";
+            break;
+        case DICITURE[1]:
+            range = DICITURE[1] +": 17-19";
+            break;
+        case DICITURE[2]:
+            range = DICITURE[2] +": 20-24";
+            break;
+        case DICITURE[3]:
+            range =DICITURE[3] +": 25-28";
+            break;
+        case DICITURE[4]:
+            range =DICITURE[4] +": 29-32";
+            break;
+        default:
+            range = "Dicitura non valida BABBOOOOO";
+            break;
+    }
+
+    document.getElementById("range").innerHTML = range;
 }
