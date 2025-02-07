@@ -193,9 +193,21 @@
     </div>
     <div class="esercizio">
         <h1>Lo sapevi che ai voti numerici corrispondono delle parole descrittive di valutazione della prestazione?</h1>
-        <input id="voto" type="number" placeholder="Inserisci il voto">
-        <button onclick="votoDicitura(document.getElementById('voto').value)">Vediamo un po' che hai fatto</button>
+        <form id="votoParola" action="">
+            <label for="voto">Inserisci il voto</label>
+            <input id="voto" type="number" placeholder="Inserisci il voto">
+            <button type="button" onclick="votoDicitura()">Vediamo un po' che hai fatto</button>
+        </form>
         <p id="dicitura"></p>
+    </div>
+    <div class="esercizio">
+        <h1>Vediamo da che voto a che voto vanno le diciture (sto iniziando a stufarmi di questa parola "dicitura" vabbeh)</h1>
+        <form id="rangeVoti" action="">
+            <label for="parola">Inserisci il voto</label>
+            <input id="parola" type="text">
+            <button type="button" onclick="dicituraRange()">Clicca (NO SCAM LO PROMETTO)</button>
+        </form>
+        <p id="range"></p>
     </div>
 </body>
 </html>
