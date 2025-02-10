@@ -1,3 +1,27 @@
+.Esercizio-N1 {
+  border: 2px solid rgb(255, 255, 255);
+  width: 30%;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.Esercizio-N2 {
+  border: 2px solid rgb(255, 255, 255);
+  width: 70%;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*Tabella*/
+.studio {
+ text-align: center;
+}
+
 table {
   border: 2px solid rgb(0, 0, 0);
   width: 70%;
@@ -20,3 +44,96 @@ th, td {
 td {
   text-align: center;
 }
+
+
+/*Pronto soccorso*/
+.titoloN4{
+ text-align: center;
+}
+
+.tutto{
+  margin: 50px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 160px;
+}
+
+.carta{
+ background-color: rgb(255, 255, 255);
+ border-radius: 4px;
+ overflow: hidden;
+ padding: 16px;
+ width: 300px;
+ box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arco{
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.pronto-soccorso{
+  color: gray;
+  font-size: 0.875rem;
+  margin-top: 4px;
+}
+
+.stella{
+  font-size: 1.25rem;
+  color: gold;
+}
+
+.stato{
+ color: gray;
+ font-size: 0.875rem;
+ gap: 0.5rem;
+ margin-top: 0.3rem;
+}
+
+.scatola-colorata{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Spaziatura tra i quadrati */
+  margin-top: 0.3rem; /* Spaziatura sopra i quadrati */
+}
+
+.scatola{
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  border-radius: 0.34rem;
+  color: rgb(0, 0, 0);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.grigio{
+  background-color: rgba(128, 128, 128, 0.586);
+}
+
+.verde{
+  background-color: rgb(123, 208, 123);
+}
+
+.blue {
+  background-color: rgba(0, 191, 255, 0.638);
+}
+
+.arancione {
+  background-color: orange;
+}
+
+.rosso {
+  background-color: rgba(255, 0, 0, 0.926);
+}
+
