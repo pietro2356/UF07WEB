@@ -30,3 +30,19 @@ function esercizio2b(){
     console.log(nome); // Bertotti
     console.log(cognome); // Matteo
 }
+
+/**
+ * ESERCIZIO 3
+ */
+function esercizio3() {
+    let matricola = 238734;
+    console.log(`Parto come: ${typeof matricola}`);
+
+    let matricolaString = matricola.toString();
+    console.log(`Ora sono una stringa ${matricolaString}`);
+    console.log(`Stai tranquillo sono di tipo: ${typeof matricolaString}`);
+
+    let matricolaNumber = parseInt(matricolaString, 10);
+    console.log(`Ora sono un numero ${matricolaNumber}`);
+    console.log(`Stai tranquillo sono di tipo: ${typeof matricolaNumber}`);
+}
