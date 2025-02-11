@@ -163,3 +163,38 @@ function esercizio7() {
     }
     console.log(`Il voto ${voto} corrisponde a: ${dicitura}`);
 }
+
+/**
+ * ESERCIZIO 8
+ */
+function esercizio8() {
+    let dicitura = document.getElementById('input8').value.trim();
+    let range;
+    switch (dicitura.toUpperCase()) {
+        case 'INSUF':
+            range = '0-16';
+            break;
+        case 'DISCRETO':
+            range = '17-19';
+            break;
+        case 'BUONO':
+            range = '20-23';
+            break;
+        case 'DISTINTO':
+            range = '24-28';
+            break;
+        case 'OTTIMO':
+            range = '29-32';
+            break;
+        default:
+            range = 'Dicitura non valida';
+            break;
+    }
+    let rangeParts = range.split('-');
+    if (rangeParts.length === 2) {
+        let count = parseInt(rangeParts[1]) - parseInt(rangeParts[0]) + 1;
+        console.log(`La dicitura ${dicitura.toUpperCase()} corrisponde al range di voti: ${range} -> ${count} voti`);
+    } else {
+        console.log(`La dicitura ${dicitura.toUpperCase()} corrisponde al range di voti: ${range}`);
+    }
+}
