@@ -21,3 +21,6 @@ th,td,tr{
 th{
     background-color:  #d2d2d2;
 }
+th:hover,td:hover{
+  background-color: blue;
+}
