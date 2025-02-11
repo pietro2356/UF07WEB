@@ -128,3 +128,38 @@ function esercizio6() {
     }
     console.log('DICITURE: \n' + output);
 }
+
+
+/**
+ * ESERCIZIO 7
+ */
+function esercizio7() {
+    let voto = document.getElementById('input7').value;
+    if (voto < 0 || voto > 32) {
+        console.error('Valore non valido. Inserire un numero tra 0 e 32.');
+        return;
+    }
+
+    let dicitura;
+    switch (true) {
+        case (voto <= 16):
+            dicitura = 'INSUF';
+            break;
+        case (voto <= 19):
+            dicitura = 'DISCRETO';
+            break;
+        case (voto <= 23):
+            dicitura = 'BUONO';
+            break;
+        case (voto <= 28):
+            dicitura = 'DISTINTO';
+            break;
+        case (voto <= 32):
+            dicitura = 'OTTIMO';
+            break;
+        default:
+            dicitura = 'Errore valore maggiore di 32';
+            break;
+    }
+    console.log(`Il voto ${voto} corrisponde a: ${dicitura}`);
+}
