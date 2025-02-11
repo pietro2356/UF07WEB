@@ -57,4 +57,16 @@ function esercizio4() {
     punteggio /= 2;
     punteggio **= 2;
     console.log(punteggio);
+    return punteggio;
+}
+/**
+ * ESERCIZIO 5
+ */
+function esercizio5() {
+    let punteggio = esercizio4();
+    if (punteggio > 314) {
+        console.log('Ottimo punteggio');
+    } else {
+        console.log('Buon punteggio');
+    }
 }
