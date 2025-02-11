@@ -46,3 +46,15 @@ function esercizio3() {
     console.log(`Ora sono un numero ${matricolaNumber}`);
     console.log(`Stai tranquillo sono di tipo: ${typeof matricolaNumber}`);
 }
+/**
+ * ESERCIZIO 4
+ */
+function esercizio4() {
+    let punteggio = 0;
+    punteggio += 13;
+    punteggio -= 4;
+    punteggio *= 4;
+    punteggio /= 2;
+    punteggio **= 2;
+    console.log(punteggio);
+}
