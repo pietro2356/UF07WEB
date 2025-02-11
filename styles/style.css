@@ -1,26 +1,116 @@
-h1{
+
+h1 {
     color: green;
     font-size: 24px;
     text-align: center;
 }
 
 
-h2{
-    color: #ff036F;
-    display: flex;
-}
-table{
- border: 2px solid black;
- border-collapse: collapse;
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
 
 }
-th,td,tr{
+
+th,
+td,
+tr {
     border: 1px solid gray;
     border-collapse: collapse;
 }
-th{
-    background-color:  #d2d2d2;
+
+th {
+    background-color: #d2d2d2;
 }
-th:hover,td:hover{
-  background-color: blue;
+
+th:hover,
+td:hover {
+    background-color: blue;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px; /* Arrotondamento angoli della card */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 300px;
+    position: relative;
+}
+
+.quadrati {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.3rem;
+}
+
+.arco {
+    font-size: 1.25rem;
+}
+
+.ps {
+    font-size: 0.875rem;
+}
+
+.grigio {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 1.25rem;
+    border-radius: 0.34rem;
+    background-color: #d3d3d3;
+}
+.verde {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 1.25rem;
+    border-radius: 0.34rem;
+    background-color: #90ee90;
+}
+.blu {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 1.25rem;
+    border-radius: 0.34rem;
+    background-color: #87cefa;
+}
+.giallo {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 1.25rem;
+    border-radius: 0.34rem;
+    background-color: #ffa500;
+}
+.rosso {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 1.25rem;
+    border-radius: 0.34rem;
+    background-color: #ff6347;
+}
+.stella {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: gold;
+    font-size: 1.5rem;
 }
