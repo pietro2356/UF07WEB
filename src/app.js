@@ -70,3 +70,61 @@ function esercizio5() {
         console.log('Buon punteggio');
     }
 }
+/**
+ * ESERCIZIO 6
+ */
+function esercizio6() {
+    const SUFFICIENZA = 18;
+    let output = '';
+    for (let i = SUFFICIENZA; i <= 32; i++) {
+        if (i === 31 || i === 32) {
+            output += '30L\n';
+        } else {
+            output += i + '\n';
+        }
+    }
+    console.log('Con for: \n'+output);
+
+    output = '';
+    let i = SUFFICIENZA;
+    while (i <= 32) {
+        if (i === 31 || i === 32) {
+            output += '30L\n';
+        } else {
+            output += i + '\n';
+        }
+        i++;
+    }
+    console.log('Con while: \n'+output);
+
+    const INSUF = 'INSUF';
+    const DISCRETO = 'DISCRETO';
+    const BUONO = 'BUONO';
+    const DISTINTO = 'DISTINTO';
+    const OTTIMO = 'OTTIMO';
+
+    output = '';
+    for (let i = 0; i <= 32; i++) {
+        switch (true) {
+            case (i <= 16):
+                output += `${i}: INSUF \n`;
+                break;
+            case (i <= 19):
+                output += `${i}: DISCRETO \n`;
+                break;
+            case (i <= 23):
+                output += `${i}: BUONO \n`;
+                break;
+            case (i <= 28):
+                output += `${i}: DISTINTO \n`;
+                break;
+            case (i <= 32):
+                output += `${i}: OTTIMO \n`;
+                break;
+            default:
+                console.error('Errore valore maggiore di 32');
+                break;
+        }
+    }
+    console.log('DICITURE: \n' + output);
+}
