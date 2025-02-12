@@ -27,4 +27,10 @@ console.log("Punteggio diviso = " + punteggio);
 punteggio **= 2;
 console.log("Punteggio alla terza = " + punteggio);
 
+//esercizio 5 
+if (punteggio > 314) {
+    console.log("Ottimo punteggio");
+} else {
+    console.log("Buon punteggio");
+}
 
