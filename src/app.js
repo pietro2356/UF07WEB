@@ -1,6 +1,8 @@
 let nome = "Dio";
 let cognome = "Brando";
 let matricola = "123456";
+let punteggio = 0;
+let sufficienza = 18;
 
 function esercizio1(){
     console.log("nome");
@@ -15,8 +17,18 @@ function esercizio2(){
 }
 
 function esercizio3(){
-    let matricolaStr = string(matricola)
-    console.log(`matricola come stringa ${matricolaStr},tipo ${typeof matricolaStr}`);
+    let matricolaStr = String(matricola);
+    console.log(`Matricola come stringa: ${matricolaStr}, Tipo: ${typeof matricolaStr}`);
     let matricolaNum = Number(matricolaStr);
-    console.log(`matricola come numero ${matricolaNum},tipo ${typeof matricolaNum}`);
+    console.log(`Matricola come numero: ${matricolaNum}, Tipo: ${typeof matricolaNum}`);
+}
+
+
+function esercizio4(){
+    punteggio += 13;
+    punteggio -= 4;
+    punteggio *= 4;
+    punteggio /= 2;
+    punteggio **= 2;
+    console.log(`Punteggio finale: ${punteggio}`);
 }
