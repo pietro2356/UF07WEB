@@ -73,17 +73,21 @@ td {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0px;
+  margin: 0px;
 }
 
 .arco{
   font-size: 1.25rem;
   font-weight: bold;
+  margin: 0; /* Rimuovi tutti i margini */
+  line-height: 1; /* Riduci l'altezza della riga per avvicinare il testo */
 }
 
 .pronto-soccorso{
   color: gray;
   font-size: 0.875rem;
-  margin-top: 4px;
+  margin-top: 2px; /* Puoi regolare questo valore per controllare lo spazio */
 }
 
 .stella{
