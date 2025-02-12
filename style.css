@@ -141,3 +141,32 @@ td {
   background-color: rgba(255, 0, 0, 0.926);
 }
 
+/*Esercizio N.6 - JS*/
+
+.Esercizio-N6For{
+ text-align: center;
+ margin: 25px;
+}
+.Esercizio-N6While{
+  text-align: center;
+  margin: 25px;
+}
+
+.Esercizio-N6For-Pt2{
+  text-align: center;
+  margin: 25px;
+}
+
+button {
+  background-color: #05c0ff; /* Blu */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #005f73; /* Blu più scuro */
+}
