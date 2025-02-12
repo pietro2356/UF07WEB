@@ -1,9 +1,16 @@
-h1{
-    color: red;
-    font-size: 24px;
+body {
+    margin: 0;
+    padding: 20px;
 }
 
-h2{
-    color: #ff036F;
+.contenuto-esercizio{
+    width: 90%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    border: 1px solid black;
+    border-radius: 10px;    
 }
+
