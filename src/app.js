@@ -14,3 +14,9 @@ function esercizio2(){
     console.log(`Nome: ${nome} Cognome: ${cognome} Matricola: ${matricola}`);
 }
 
+function esercizio3(){
+    let matricolaStr = string(matricola)
+    console.log(`matricola come stringa ${matricolaStr},tipo ${typeof matricolaStr}`);
+    let matricolaNum = Number(matricolaStr);
+    console.log(`matricola come numero ${matricolaNum},tipo ${typeof matricolaNum}`);
+}
