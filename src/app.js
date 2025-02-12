@@ -8,3 +8,9 @@ function esercizio1(){
     console.log("matricola");
     console.log(`Nome: ${nome} Cognome: ${cognome} Matricola: ${matricola}`);
 }
+
+function esercizio2(){
+    [nome, cognome] = [cognome, nome];
+    console.log(`Nome: ${nome} Cognome: ${cognome} Matricola: ${matricola}`);
+}
+
