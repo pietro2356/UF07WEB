@@ -41,3 +41,57 @@ function esercizio5(){
     }
 }
 
+function esercizio6for(){
+    console.log("con for");
+    for (let i = 0; i <= 32; i++) {
+        let voto = i;
+        if (voto >= 31) {
+            console.log(`${voto}: 30L`);
+        } else {
+            console.log(voto);
+        }
+    }
+    
+}
+function esercizio6while(){
+    console.log("con while");
+    let i = 0;
+    while (i <= 32) {
+        let voto = i;
+        if (voto >= 31) {
+            console.log(`${voto}: 30L`);
+        } else {
+            console.log(voto);
+        }
+        i++;
+    }
+}
+
+const VOTI = [0, 1, 2, 3, 4, 5, 6 ,7 ,8 ,9 ,10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ,22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32];
+function esercizio6voto(){
+    for (let i = 0; i < VOTI.length; i++) {
+        switch (true) {
+            case (VOTI[i] <= 16): console.log("Insufficiente fai cagare Dio"); break;
+            case (VOTI[i] <= 20): console.log("discreto passato per dio"); break;
+            case (VOTI[i] <= 24): console.log("buono mah potevi fare di più studia coglion"); break;
+            case (VOTI[i] <= 28): console.log("distinto bravo dio ma non ti montare la testa"); break;
+            case (VOTI[i] <= 32 ): console.log("ottimo, sei stato bravissimo a copiare"); break;
+        }
+    }
+    
+}
+
+function esercizio7(){
+    voto = document.forms["votoDiDio"]["voto"].value;
+    if (voto >= 0 && voto <= 32) {
+        switch (true) {
+            case (voto <= 16): console.log("Insufficiente fai cagare Dio"); break;
+            case (voto <= 20): console.log("discreto passato per dio"); break;
+            case (voto <= 24): console.log("buono mah potevi fare di più studia coglion"); break;
+            case (voto <= 28): console.log("distinto bravo dio ma non ti montare la testa"); break;
+            case (voto <= 32 ): console.log("ottimo, sei stato bravissimo a copiare"); break;
+        }
+    }else{
+        console.log("See certo e tu credi che " + voto + " sia un voto valido??");
+    }
+}
