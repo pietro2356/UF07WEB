@@ -32,3 +32,12 @@ function esercizio4(){
     punteggio **= 2;
     console.log(`Punteggio finale: ${punteggio}`);
 }
+
+function esercizio5(){
+    if (punteggio > 314) {
+        console.log("Ottimo Punteggio");
+    }else{
+        console.log("Buon Punteggio");
+    }
+}
+
