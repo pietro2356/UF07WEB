@@ -157,8 +157,18 @@ td {
   margin: 25px;
 }
 
+.Esercizio-N6While-Pt2{
+  text-align: center;
+  margin: 25px;
+}
+
+.Esercizio-N7{
+  text-align: center;
+  margin: 25px;
+}
+
 button {
-  background-color: #05c0ff; /* Blu */
+  background-color: #007440; 
   color: white;
   border: none;
   padding: 10px 20px;
@@ -168,5 +178,5 @@ button {
 }
 
 button:hover {
-  background-color: #005f73; /* Blu più scuro */
+  background-color: #111a8f; 
 }

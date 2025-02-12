@@ -65,12 +65,47 @@ function Esercizio6While(){
 function Esercizio6For2(){
     console.log("Ciclo for:");
         for (let i = 0; i <= 32; i++) {
-            if (i > sufficienza) {
-                if (i >= 31) {
-                    console.log("30L");
-                } else {
-                    console.log(i);
+                if (i > 0 && i <= 16) {
+                    console.log("INSUFFICENTE")  
+                }   
+                else if (i >= 17 && i <= 19) {
+                    console.log("Discreto")  
+                } 
+                else if (i >= 20 && i <= 24) {
+                    console.log("Buono")  
+                } 
+                else if (i >= 25 && i <= 28) {
+                    console.log("Distinto")  
+                } 
+                else if (i >= 29 && i <= 32) {
+                    console.log("Ottimo")  
                 }
-            }
+     }              
+}
+
+//Esercizio 6 pt.2
+//ciclo while
+function Esercizio6While2() {
+    console.log("Ciclo while:");
+    let i = 1;
+    while (i <= 32) {
+        if (i > 0 && i <= 16) {
+            console.log("INSUFFICENTE")  
+        }   
+        else if (i >= 17 && i <= 19) {
+            console.log("Discreto")  
+        } 
+        else if (i >= 20 && i <= 24) {
+            console.log("Buono")  
+        } 
+        else if (i >= 25 && i <= 28) {
+            console.log("Distinto")  
+        } 
+        else if (i >= 29 && i <= 32) {
+            console.log("Ottimo")  
         }
+        i++;
     }
+}
+
+
