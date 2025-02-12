@@ -1,9 +1,8 @@
-let nome = "Daniel ";
-let cognome = "Mittempergher ";
+let nome = "Mittemperher ";
+let cognome = "Daniel ";
 let matricola = "829DA ";
-
-console.log (nome);
-console.log (cognome);
-console.log (matricola);
+let scambio = nome;
+nome = cognome;
+cognome = scambio;
 
 console.log("Sono " + nome + cognome + "e la mia matricola: " + matricola);
