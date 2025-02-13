@@ -168,3 +168,81 @@ th, td{
 tbody tr:nth-child(odd){
     background-color: #cc501f29;
 }
+
+/* Esercizio 4 */
+.Es4{
+    font-family: sans-serif;
+    margin-bottom: 60px;
+}
+
+.card{
+    width: fit-content;
+    margin: 10px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .title h2{
+    margin: 0px;
+    font-size: 1.25rem;
+    color: #000;
+}
+
+.header .title h3{
+    margin: 5px 0;
+    font-weight: 300;
+    font-size: 0.875rem;
+    color: #686868;
+}
+
+.card p{
+    color: #686868;
+    font-size: 0.875rem;
+    margin-bottom: 0;
+}
+
+.attesa{
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.3rem;
+}
+
+.cod-bianco, .cod-verde, .cod-blu, .cod-arancio, .cod-rosso{
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ef9b74;
+    border-radius: 0.34rem;
+    font-size: 25px;
+}
+
+.cod-bianco{
+    background-color: #e2e2e2;
+}
+
+.cod-verde{
+    background-color: #a4f177;
+}
+
+.cod-blu{
+    background-color: #77cef1;
+}
+
+.cod-arancio{
+    background-color: #ffad3b;
+}
+
+.cod-rosso{
+    background-color: #ff3e3e;
+}
