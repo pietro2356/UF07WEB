@@ -130,3 +130,41 @@ a:hover {
     background-color: #ff793b5b;
     border-radius: 10px;
 }
+
+/* Esercizio 3 */
+.Es3{
+    padding: 30px;
+}
+
+.tabella{
+    width: 70vw;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff6f0;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.tabella h2{
+    justify-content: center;
+    font-weight: 400;
+}
+
+.tabella table{
+    margin: 0 30px 30px;
+    border-collapse: collapse;
+    background-color: #ffd7bd;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+
+th, td{
+    padding: 10px;
+    text-align: center;
+}
+
+tbody tr:nth-child(odd){
+    background-color: #cc501f29;
+}
