@@ -29,3 +29,29 @@ function esercizio2(){
     console.log(`Nome:${nome}`);
     console.log(`Cognome:${cognome}`);
 }
+
+function esercizio3(){
+    console.log(`La variabile matricola all'inizio è di tipo ${typeof matricola}`);
+    matricola=String(matricola);
+    console.log(`Ora la variabile matricola è di tipo ${typeof matricola}`);
+    matricola=Number(matricola);
+    console.log(`Alla fine la variabile matricola è di tipo ${typeof matricola}`);
+}
+function esercizio4(){
+    let punteggio=0;
+    console.log(`Punteggio: ${punteggio}`);
+    punteggio+=13;
+    console.log(`Punteggio: ${punteggio}`);
+    punteggio-=4;
+    console.log(`Punteggio: ${punteggio}`);
+    punteggio*=4;
+    console.log(`Punteggio: ${punteggio}`);
+    punteggio/=2;
+    console.log(`Punteggio: ${punteggio}`);
+    punteggio**=2
+    console.log(`Punteggio: ${punteggio}`);     
+}
+function esercizio5(){}
+function esercizio6(){}
+function esercizio7(){}
+function esercizio8(){}
