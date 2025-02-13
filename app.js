@@ -18,7 +18,7 @@ result = sottrai(2, 4);
 console.log("Risultato: ", result);
 
 //Secondo metodo per creare una funzione
-let moltiplica = (val1, val2) => {
+const moltiplica = (val1, val2) => {
     return val1*val2;
 }
 
@@ -26,8 +26,24 @@ result = moltiplica(2, 4);
 console.log("risultato ", result);
 
 
+//Cicli For e While 
+const conta = (end = 3, start = 0) => {
+    console.log("Start: ", start);
+    console.log("End: ", end);
 
+    for(let i = start; i <= end; i++){
+        console.log(i);
+    }
 
+    console.log("------");
+
+    let count = start;
+    while (count <= end ){
+        console.log(count);
+        count++;
+    }
+}
+conta(2, 3);
 
 
 
