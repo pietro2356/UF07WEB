@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.contenuto-card {
+    padding: 16px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin: 0 0 8px;
+}
+.card-subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin: 0 0 8px;
+}
+
+.card-description {
+    font-size: 1em;
+    color: #666;
+    margin: 0 0 0.3rem;
+}
+
+.card-quadratini-container {
+    font-size: 1.75rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem; /* Spazio tra i quadratini */
+}
+.card-grigio {
+    width: 30px;
+    height: 30px;
+    flex: 1;
+    padding: 10px 20px;
+    background-color: #c7c7c7;
+    color: #000000;
+    border-radius: 0.34rem;
+    text-align: center;
+}
+.card-verde {
+    width: 20px;
+    height: 30px;
+    flex: 1;
+    padding: 10px 20px;
+    background-color: #00ff44;
+    color: #000000;
+    border-radius: 0.34rem;
+    text-align: center;
+}
+.card-blu {
+    width: 20px;
+    height: 30px;
+    flex: 1;
+    padding: 10px 20px;
+    background-color: #1f78d7;
+    color: #000000;
+    border-radius: 0.34rem;
+    text-align: center;
+}
+.card-giallo {
+    width: 20px;
+    height: 30px;
+    flex: 1;
+    padding: 10px 20px;
+    background-color: #ffb700;
+    color: #000000;
+    border-radius: 0.34rem;
+    text-align: center;
+}
+.card-rosso {
+    width: 20px;
+    height: 30px;
+    flex: 1;
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: #000000;
+    border-radius: 0.34rem;
+    text-align: center;
+}

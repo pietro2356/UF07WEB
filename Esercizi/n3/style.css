@@ -1,0 +1,16 @@
+.tabella-università {
+    text-align: left;
+    width: 100%;
+    height: 500px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.tabella-università th{
+    height: 75px;
+    border: 1px solid rgb(133, 133, 133);
+    background-color: rgb(181, 181, 181);
+}
+.tabella-università td{
+    height: 10%;
+    border: 1px solid rgb(133, 133, 133);
+}

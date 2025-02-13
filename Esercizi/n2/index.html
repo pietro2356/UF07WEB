@@ -1,0 +1,43 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lista della spesa</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    .numeri-romani {
+        list-style-type: none;
+        counter-reset: list-counter 2;
+    }
+    .numeri-romani > li {
+        counter-increment: list-counter;
+    }
+    .numeri-romani > li::before {
+        content: counter(list-counter, upper-roman) ". ";
+        margin-right: 10px;
+    }
+    .normale {
+        list-style-type: disc;
+        counter-reset: none;
+    }
+    .normale li::before {
+        content: none;
+    }
+    
+</style>
+</head>
+<body>
+    <p>
+        Questa è una lista della spesa perché il frigo è completamente vuoto.
+    </p>
+    <ul class="numeri-romani">
+        <li>mortadella</li>
+        <li>latticini</li>
+            <ul class="normale">
+                <li>latte</li>
+                <li>mozzarella</li>
+                <li>caciocavallo</li>
+            </ul>
+        <li>succo di mela</li>
+        <li>gelato</li>
+        <p>-<b>Note Importanti</b>-</p> la mortadella deve essere senza pistacchio e le mele da cui è estratto il succo devono essere mele melinda</p>
+    </ul> 
+</body>
