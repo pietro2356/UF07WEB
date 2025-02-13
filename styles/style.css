@@ -21,7 +21,10 @@ table{
   margin: 0 auto;
   border-collapse: collapse;
   width: 100%;
-  border: 1px solid #000;
+  border: 10px solid;
+  border-radius: 15px;
+  overflow:hidden;
+  box-shadow: 5px;
 }
 
 th, td{
@@ -30,6 +33,11 @@ th, td{
 }
 
 thead{
-  background-color: lightgrey;
+  background-color: lightblue;
   font-style: bold;
+}
+
+tr:hover{
+    background-color: lightskyblue;
+    color: white;
 }
