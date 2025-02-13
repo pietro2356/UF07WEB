@@ -142,4 +142,58 @@ function esercizio7(){
             console.log("Voto non valido");
     }
 }
-function esercizio8(){}
+function esercizio8(){
+    const valutazioni={
+        descrizione:["INSUF","Discreto","Buono","Distinto","Ottimo","Lode"],
+        min:[0,17,20,25,28,31],
+        max:[17,20,25,28,30,32]};
+    let rangevoti=[];
+    let lengthrange=0;
+    
+    const INPUT= document.getElementById('valutazione');
+    const VALUTAZIONE= INPUT.value;
+
+    console.log(VALUTAZIONE)
+    
+    switch (VALUTAZIONE){
+        case "INSUF":
+            rangevoti=[valutazioni.min[0],valutazioni.max[0]];
+            lengthrange=rangevoti[1]-rangevoti[0]+1;
+
+            console.log(`${valutazioni.descrizione[0]}: ${rangevoti}-->Range:${lengthrange}`);
+            break;
+        case "Discreto":
+            rangevoti=[valutazioni.min[1],valutazioni.max[1]];
+            lengthrange=rangevoti[1]-rangevoti[0]+1;
+
+            console.log(`${valutazioni.descrizione[1]}: ${rangevoti}-->Range:${lengthrange}`);
+            break;
+        case "Buono":
+            rangevoti=[valutazioni.min[2],valutazioni.max[2]];
+            lengthrange=rangevoti[1]-rangevoti[0]+1;
+
+            console.log(`${valutazioni.descrizione[2]}: ${rangevoti}-->Range:${lengthrange}`);
+            break;
+        case "Distinto":
+            rangevoti=[valutazioni.min[3],valutazioni.max[3]];
+            lengthrange=rangevoti[1]-rangevoti[0]+1;
+
+            console.log(`${valutazioni.descrizione[3]}: ${rangevoti}-->Range:${lengthrange}`);
+            break;
+        case "Ottimo": 
+            rangevoti=[valutazioni.min[4],valutazioni.max[4]];
+            lengthrange=rangevoti[1]-rangevoti[0]+1;
+
+            console.log(`${valutazioni.descrizione[4]}:${rangevoti}-->Range:${lengthrange}`);
+            break;
+        case "Lode":
+            rangevoti=[valutazioni.min[5],valutazioni.max[5]];
+            lengthrange=rangevoti[1]-rangevoti[0]+1;
+
+            console.log(`${valutazioni.descrizione[5]}: ${rangevoti}-->Range:${lengthrange}`);
+            break;
+        default:
+            console.log("Valutazione non valida")
+            console.log("Valutazioni valide: INSUF, Discreto, Buono, Distinto, Ottimo, Lode");
+    }
+}
