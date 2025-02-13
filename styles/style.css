@@ -65,19 +65,20 @@ tr:hover{
 .codici {
     padding-top: 0.3rem;
     display: flex;
-    gap: 5px;
     margin-top: 10px;
     margin-left: 10px;
 }
 .codici div {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
+    margin:auto;
+    margin-left: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 0.34rem;
     font-weight: bold;
-    color: white;
+    color: black;
 }
 .grey { background: #d3d3d3; color: black; }
 .green { background: #a8d18d; }
