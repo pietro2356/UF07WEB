@@ -1,9 +1,75 @@
-h1{
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+html{
+    font-family: "Lexend", serif;
+    font-weight: 300;
+}
+
+body{
+    min-height: 100vh;
+    background: url(../images/background.png) center / cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.bg{
+    width: 90vw;
+    margin: 10px auto;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff5;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 .4rem .8rem #0005;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+/* Esercizio 1 */
+
+.Es1{
+    padding: 30px;
+    background-image: linear-gradient(to bottom, #ffffff, #ffffff00);
+}
+
+.Es1 h1{
     color: red;
-    font-size: 24px;
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0px;
 }
 
 h2{
-    color: #ff036F;
+    color: #c03e02;
+    font-weight: 300;
     display: flex;
+}
+
+.Es1 p{
+    color: #3f3f3f;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.Es1 a {
+    display: block;
+    width: 210px;
+    text-align: center;
+    margin: auto;
+    color: #cc3a00;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    background-color: #fff6f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+a:hover {
+    background-color: #fff6f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
