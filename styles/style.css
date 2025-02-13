@@ -1,6 +1,6 @@
 body{
   font-family: 'Roboto', sans-serif;
-  margin: 0;
+  margin: auto;
   padding: 0;
   background-color: #f1f1f1;
   align-items: center;
@@ -40,4 +40,49 @@ thead{
 tr:hover{
     background-color: lightskyblue;
     color: white;
+}
+
+.card {
+    text-align: left;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    margin:auto;
+}
+
+.card h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.card p {
+    margin: 5px 0;
+    color: gray;
+}
+.codici {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+.codici div {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+}
+.grey { background: #d3d3d3; color: black; }
+.green { background: #a8d18d; }
+.blue { background: #5b9bd5; }
+.orange { background: #ed7d31; }
+.red { background: #e74c3c; }
+.stella {
+    float: right;
+    color: gold;
+    font-size: 20px;
 }
