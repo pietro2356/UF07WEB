@@ -1,6 +1,7 @@
 let nome="Emmanuele";
 let cognome="Grassi";
 let matricola=239734;
+let punteggio=0;
 
 function esercizio1(){
     console.log(nome);
@@ -38,7 +39,6 @@ function esercizio3(){
     console.log(`Alla fine la variabile matricola è di tipo ${typeof matricola}`);
 }
 function esercizio4(){
-    let punteggio=0;
     console.log(`Punteggio: ${punteggio}`);
     punteggio+=13;
     console.log(`Punteggio: ${punteggio}`);
@@ -49,9 +49,70 @@ function esercizio4(){
     punteggio/=2;
     console.log(`Punteggio: ${punteggio}`);
     punteggio**=2
-    console.log(`Punteggio: ${punteggio}`);     
+    console.log(`Punteggio: ${punteggio}`);  
+    
+    return punteggio;
 }
-function esercizio5(){}
-function esercizio6(){}
+function esercizio5(){
+    if (punteggio>314){
+        console.log("Ottimo punteggio");
+    }else{
+        console.log("Buon punteggio");
+    }
+}
+function esercizio6(){
+    const SUFFICENZA=18; 
+    //costante SUFFICENZA solo per stampare i voti >=18
+
+    //Ciclo for
+    console.log("Ciclo for");
+
+    for (let voto=0;voto<=32;voto++){
+        if (voto>=SUFFICENZA){
+            if(voto>30){
+                    console.log("30L");
+            }else{
+                console.log(voto);
+            }
+        }
+    }   
+
+    //Ciclo while
+    console.log("Ciclo while");
+    let voto = 0;
+
+    while (voto <= 32) { 
+       if (voto >= SUFFICENZA) { 
+           if (voto > 30) {
+              console.log("30L");
+            } else {
+               console.log(voto);
+           }
+       }
+      voto++;
+    }
+
+    //Significato voti
+    console.log("Significato voti:");
+    for (let voto=0;voto<=32;voto++){
+        switch(true){
+            case (voto<17):
+                console.log(`${voto}: INSUF`);
+                break;
+            case (17<=voto && voto<=19):
+                console.log(`${voto}: Discreto`);
+                break;
+            case (20<=voto && voto<=24):
+                console.log(`${voto}: Buono`);
+                break;
+            case (25<=voto && voto<=28):
+                console.log(`${voto}: Distinto`);
+                break;
+            case (28<=voto):
+                console.log(`${voto}: Ottimo`);
+                break;
+        }
+    }
+}
 function esercizio7(){}
 function esercizio8(){}
