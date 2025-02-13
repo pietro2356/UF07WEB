@@ -114,5 +114,32 @@ function esercizio6(){
         }
     }
 }
-function esercizio7(){}
+
+function esercizio7(){
+    const INPUT= document.getElementById('voto');
+    const VOTO= Number(INPUT.value);
+
+    switch(true){
+        case (VOTO<17):
+            console.log(`${VOTO}: INSUF`);
+            break;
+        case (17<=VOTO && VOTO<=19):
+            console.log(`${VOTO}: Discreto`);
+            break;
+        case (20<=VOTO && VOTO<=24):
+            console.log(`${VOTO}: Buono`);
+            break;
+        case (25<=VOTO && VOTO<=28):
+            console.log(`${VOTO}: Distinto`);
+            break;
+        case (28<=VOTO && VOTO<=30):
+            console.log(`${VOTO}: Ottimo`);
+            break;
+        case (31<=VOTO && VOTO<=32):
+            console.log("30L");
+            break;
+        default:
+            console.log("Voto non valido");
+    }
+}
 function esercizio8(){}
