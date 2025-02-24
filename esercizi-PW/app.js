@@ -56,23 +56,39 @@ if (ris5 >314){
 
 
 // Esercizio 6
-let sufficienza=18;
-let votoMax=32;
+let insuf = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
+let discreto = [17, 18, 19];
+let buono = [20, 21, 22, 23, 24];
+let distinto = [25, 26, 27, 28];
+let ottimo = [29, 30, 31, 32];
+let votoMax = 32;
 
-for (let i = sufficienza; i <= votoMax; i++) {
-    if (i == votoMax - 1 || i == votoMax) {
-        console.log("30L");
-    } else {
-        console.log(i);
+for (let i = 0; i <= votoMax; i++) {
+    if (insuf.includes(i)) {
+        console.log(`${i}: INSUF`);
+    } else if (discreto.includes(i)) {
+        console.log(`${i}: DISCRETO`);
+    } else if (buono.includes(i)) {
+        console.log(`${i}: BUONO`);
+    } else if (distinto.includes(i)) {
+        console.log(`${i}: DISTINTO`);
+    } else if (ottimo.includes(i)) {
+        console.log(`${i}: OTTIMO`);
     }
 }
 
-let i=sufficienza;
+let i=0;
 while (i <= votoMax) {
-    if (i == votoMax - 1 || i == votoMax) {
-        console.log("30L");
-    } else {
-        console.log(i);
+    if (insuf.includes(i)) {
+        console.log(`${i}: INSUF`);
+    } else if (discreto.includes(i)) {
+        console.log(`${i}: DISCRETO`);
+    } else if (buono.includes(i)) {
+        console.log(`${i}: BUONO`);
+    } else if (distinto.includes(i)) {
+        console.log(`${i}: DISTINTO`);
+    } else if (ottimo.includes(i)) {
+        console.log(`${i}: OTTIMO`);
     }
     i++;
 }
