@@ -1,0 +1,144 @@
+.divEsercizi /*serve a suddividere in modo ordinato gli esercizi*/
+{
+    border: 2px solid #000000;
+    margin: 5px;
+    padding: 10px;
+}
+
+
+table /*rende tabella migliore*/
+{
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid #000000;
+}
+
+th, td 
+{
+    border: 1px solid #000000; 
+    padding: 10px;
+    text-align: left;
+}
+
+th 
+{
+    background-color: #82bdf1;
+}
+
+td:first-child /*caratteristiche date solo alla prima colonna*/
+{
+    color: #007bff;
+    text-decoration: underline;
+}
+
+
+
+.divCard
+{
+    border: 2px solid #000000;
+    margin: 5px;
+    padding: 10px;
+    
+}
+
+.card
+{
+    justify-self: center;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    overflow:hidden;
+    width: 30%;
+    ;
+
+}
+
+.Arco 
+{
+    font-size: 1.25rem; 
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex; 
+    justify-content: space-between; 
+    width: 100%;
+}
+
+.ContenitoreCodici
+{
+    display: flex;
+    text-align: center;
+}
+
+.CodiceBianco
+{
+    border-radius: 0.34rem;
+    background-color: #c1bcbc;
+    width: 100%; /* Larghezza del quadrato */
+    height: 100%; /* Altezza del quadrato */
+    color: #000000;
+    display: flex;
+    justify-content: center; /* Centra il testo orizzontalmente */
+    align-items: center; /* Centra il testo verticalmente */
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: center;
+    margin-right: 0.5rem;
+}
+.CodiceVerde
+{
+    border-radius: 0.34rem;
+    background-color: #4ce841;
+    width: 100%; /* Larghezza del quadrato */
+    height: 100%; /* Altezza del quadrato */
+    color: #000000;
+    display: flex;
+    justify-content: center; /* Centra il testo orizzontalmente */
+    align-items: center; /* Centra il testo verticalmente */
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: center;
+    margin-right: 0.5rem;
+}
+.CodiceBlu
+{
+    border-radius: 0.34rem;
+    background-color: #4e81f6;
+    width: 100%; /* Larghezza del quadrato */
+    height: 100%; /* Altezza del quadrato */
+    color: #000000;
+    display: flex;
+    justify-content: center; /* Centra il testo orizzontalmente */
+    align-items: center; /* Centra il testo verticalmente */
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: center;
+    margin-right: 0.5rem;
+}
+.CodiceArancione
+{
+    border-radius: 0.34rem;
+    background-color: #e96021;
+    width: 100%; /* Larghezza del quadrato */
+    height: 100%; /* Altezza del quadrato */
+    color: #000000;
+    display: flex;
+    justify-content: center; /* Centra il testo orizzontalmente */
+    align-items: center; /* Centra il testo verticalmente */
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: center;
+    margin-right: 0.5rem;
+}
+.CodiceRosso
+{
+    border-radius: 0.34rem;
+    background-color: #e50101;
+    width: 100%; /* Larghezza del quadrato */
+    height: 100%; /* Altezza del quadrato */
+    color: #000000;
+    display: flex;
+    justify-content: center; /* Centra il testo orizzontalmente */
+    align-items: center; /* Centra il testo verticalmente */
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: center;
+}
