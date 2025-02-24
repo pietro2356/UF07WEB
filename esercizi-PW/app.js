@@ -1,3 +1,4 @@
+// Esercizi 1, 2 e 3 
 let nome="Angela";
 let cognome="Trentin";
 let matricola=238734;
@@ -10,6 +11,7 @@ console.log(`Sono ${nome} ${cognome} e la mia matricola è: ${matricola}`);
 console.log(typeof matricola);
 console.log(typeof matricolaStringa);
 
+// Esercizio 4 e 5
 let punteggio=0;
 
 let ris1=punteggio+13
@@ -53,13 +55,17 @@ if (ris5 >314){
 }
 
 
-let i=0;
-while(i<=32){
+// Esercizio 6
+let sufficienza=18;
+let votoMax=32;
+
+for (let i = sufficienza; i <= votoMax; i++) {
+    console.log(i);
+}
+let i=sufficienza;
+while(i<=votoMax){
     console.log(i);
     i++;
-}
-for (let i = 0; i <= 32; i++) {
-    console.log(i);
 }
 
 
