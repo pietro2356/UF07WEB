@@ -61,36 +61,28 @@ let discreto = [17, 18, 19];
 let buono = [20, 21, 22, 23, 24];
 let distinto = [25, 26, 27, 28];
 let ottimo = [29, 30, 31, 32];
+let votoMin = 0;
 let votoMax = 32;
 
-for (let i = 0; i <= votoMax; i++) {
-    if (insuf.includes(i)) {
-        console.log(`${i}: INSUF`);
-    } else if (discreto.includes(i)) {
-        console.log(`${i}: DISCRETO`);
-    } else if (buono.includes(i)) {
-        console.log(`${i}: BUONO`);
-    } else if (distinto.includes(i)) {
-        console.log(`${i}: DISTINTO`);
-    } else if (ottimo.includes(i)) {
-        console.log(`${i}: OTTIMO`);
+/**
+ * Stampa i voti e la relativa valutazione
+ * @param {number} votoMin 
+ * @param {number} votoMax 
+ */
+function stampaVoti(votoMin, votoMax) {
+    for (let i = votoMin; i <= votoMax; i++) {
+        if (insuf.includes(i)) {
+            console.log(`${i}: INSUF`);
+        } else if (discreto.includes(i)) {
+            console.log(`${i}: DISCRETO`);
+        } else if (buono.includes(i)) {
+            console.log(`${i}: BUONO`);
+        } else if (distinto.includes(i)) {
+            console.log(`${i}: DISTINTO`);
+        } else if (ottimo.includes(i)) {
+            console.log(`${i}: OTTIMO`);
+        }
     }
 }
 
-let i=0;
-while (i <= votoMax) {
-    if (insuf.includes(i)) {
-        console.log(`${i}: INSUF`);
-    } else if (discreto.includes(i)) {
-        console.log(`${i}: DISCRETO`);
-    } else if (buono.includes(i)) {
-        console.log(`${i}: BUONO`);
-    } else if (distinto.includes(i)) {
-        console.log(`${i}: DISTINTO`);
-    } else if (ottimo.includes(i)) {
-        console.log(`${i}: OTTIMO`);
-    }
-    i++;
-}
-
-
+stampaVoti(votoMin, votoMax);
