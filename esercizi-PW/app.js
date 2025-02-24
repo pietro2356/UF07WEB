@@ -66,10 +66,20 @@ let votoMax = 32;
 
 /**
  * Stampa i voti e la relativa valutazione
+ * controlla inoltre che i parametri siano validi e che siano nel range corretto
  * @param {number} votoMin 
  * @param {number} votoMax 
  */
 function stampaVoti(votoMin, votoMax) {
+    if (typeof votoMin !== 'number' || typeof votoMax !== 'number') {
+        console.log("Errore: Entrambi i parametri devono essere numeri.");
+        return;
+    }
+    if (votoMin < 0 || votoMin > 32 || votoMax < 0 || votoMax > 32) {
+        console.log("Errore: I voti devono essere tra 0 e 32.");
+        return;
+    }
+    
     for (let i = votoMin; i <= votoMax; i++) {
         if (insuf.includes(i)) {
             console.log(`${i}: INSUF`);
