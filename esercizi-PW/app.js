@@ -60,11 +60,20 @@ let sufficienza=18;
 let votoMax=32;
 
 for (let i = sufficienza; i <= votoMax; i++) {
-    console.log(i);
+    if (i == votoMax - 1 || i == votoMax) {
+        console.log("30L");
+    } else {
+        console.log(i);
+    }
 }
+
 let i=sufficienza;
-while(i<=votoMax){
-    console.log(i);
+while (i <= votoMax) {
+    if (i == votoMax - 1 || i == votoMax) {
+        console.log("30L");
+    } else {
+        console.log(i);
+    }
     i++;
 }
 
