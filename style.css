@@ -1,0 +1,66 @@
+body{
+    background-color:honeydew;
+}
+
+
+h1{
+    color:rgb(19, 214, 248);
+    background-color:lightpink;
+}
+
+th, td{
+    color:saddlebrown;
+    border: 1px solid black;
+}
+
+/* !important serve per fissare una funzione, ovvero per farla prevalere rispetto a quelle sottostanti */
+
+th{
+    color:aqua;
+    font-size: 1.2rem;
+}
+
+#table_caption{
+    font-size: 0.8rem;
+    font-style: italic;
+    color:coral;
+}
+
+#tab_studenti{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+    
+.cognome{
+    color:blueviolet;
+    font-size: oblique;
+}
+
+.cognome:hover{
+    color:blue;
+    font-weight: bold;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+
+
+/* Selettori:
+    -elemento <tag>
+    -id #<nome>
+    -classe .<nome>
+    -pseudoclasse :<nome>
+*/
+
+
+/*
+    -Padding: spazio interno, appena fuori dalla scritta
+    -Border
+    -Margin: distanza dal margine
+*/
+
+h2{
+    border: 2px solid red;
+    padding: 5px;
+    margin: 20px;
+}
